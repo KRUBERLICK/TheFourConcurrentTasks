@@ -1,14 +1,12 @@
 package producer_consumer;
 
-import queue.IQueue;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class DataQueue implements IQueue {
+public class DataQueue {
 
     private List<Integer> dataList;
     private Lock lock;
