@@ -40,7 +40,6 @@ public class BookStorage {
             readerSem.release();
 
             System.out.println(Thread.currentThread().getName() + " is reading");
-            Thread.sleep(1000);
 
             readerSem.acquire();
             readCount--;

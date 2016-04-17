@@ -1,4 +1,4 @@
-package readers_writers_1;
+package readers_writers_2;
 
 import java.util.Random;
 
@@ -23,12 +23,12 @@ public class Reader implements Runnable {
     @Override
     public void run() {
         //while (true) {
-            storage.read();
-            try {
-                Thread.sleep(getRandTime());
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        storage.read();
+        try {
+            Thread.sleep(getRandTime());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //}
     }
 
