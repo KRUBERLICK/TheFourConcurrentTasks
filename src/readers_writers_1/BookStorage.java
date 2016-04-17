@@ -31,8 +31,6 @@ public class BookStorage {
     }
 
     public void read() {
-        int result = 0;
-
         try {
             readerSem.acquire();
             readCount++;

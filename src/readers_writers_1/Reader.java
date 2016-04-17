@@ -24,14 +24,14 @@ public class Reader implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        //while (true) {
             storage.read();
             try {
                 Thread.sleep(getRandTime());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        //}
     }
 
     private int getRandTime() {

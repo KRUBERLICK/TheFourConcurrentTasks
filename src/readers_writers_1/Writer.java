@@ -23,14 +23,14 @@ public class Writer implements Runnable {
     @Override
     public void run() {
         int i = 1;
-        while (true) {
+        //while (true) {
             storage.write(i++);
             try {
                 Thread.sleep(getRandTime());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        //}
     }
 
     private int getRandTime() {
